@@ -10,10 +10,10 @@ public class ex7 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         double valorBRL = 0;
-        double cotacaoDolar = 0.2;
+        double cotacaoDolar = 5;
         System.out.println("Digite o valor que deseja converter: ");
         valorBRL = sc.nextDouble();
-        double conversao = valorBRL * cotacaoDolar;
+        double conversao = valorBRL / cotacaoDolar;
         System.out.println("R$"+ valorBRL+ " equivale a US$" + conversao);
     }
 }
