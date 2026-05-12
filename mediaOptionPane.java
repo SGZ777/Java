@@ -9,7 +9,7 @@ public class mediaOptionPane {
         double somaMedias = 0;
         double n1;
         double n2;
-        double maiorNota = 0;
+        double maiorMedia = 0;
         int opcao = 0;
         int qtdAlunos = 0;
 
@@ -24,7 +24,7 @@ public class mediaOptionPane {
             mediaGeral = somaMedias / qtdAlunos;
 
             if (media > maiorNota){
-                maiorNota = media;
+                maiorMedia = media;
                 alunoMaiorNota = nome;
             }
             if (media >= 50){
@@ -34,7 +34,7 @@ public class mediaOptionPane {
                 situacaoAluno = "Reprovado";
             }
             JOptionPane.showMessageDialog(null,"Aluno: " + nome + "\nMédia: " + media + " - " + situacaoAluno);
-            JOptionPane.showMessageDialog(null, "Média geral: " + mediaGeral + "\nMaior nota: " + maiorNota + " tirada por " + alunoMaiorNota);
+            JOptionPane.showMessageDialog(null, "Média geral: " + mediaGeral + "\nMaior média: " + maiorMedia + " tirada por " + alunoMaiorNota);
             opcao = JOptionPane.showConfirmDialog(null, "Deseja incluir mais alunos?", "Pergunta", JOptionPane.YES_NO_OPTION);
             switch (opcao){
                 case 0:
