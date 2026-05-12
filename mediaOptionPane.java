@@ -1,5 +1,3 @@
-package com.mycompany.mavenproject1;
-
 import javax.swing.JOptionPane;
 
 public class mediaOptionPane {
@@ -11,9 +9,9 @@ public class mediaOptionPane {
         double somaMedias = 0;
         double n1;
         double n2;
+        double maiorNota = 0;
         int opcao = 0;
         int qtdAlunos = 0;
-        double maiorNota = 0;
 
         while (opcao != 1){
             JOptionPane.showMessageDialog(null, "Calculo de média", "Calculo de média", JOptionPane.INFORMATION_MESSAGE);
@@ -30,13 +28,11 @@ public class mediaOptionPane {
                 alunoMaiorNota = nome;
             }
             if (media >= 50){
-
                 situacaoAluno = "Aprovado";
             }
             else {
                 situacaoAluno = "Reprovado";
             }
-
             JOptionPane.showMessageDialog(null,"Aluno: " + nome + "\nMédia: " + media + " - " + situacaoAluno);
             JOptionPane.showMessageDialog(null, "Média geral: " + mediaGeral + "\nMaior nota: " + maiorNota + " tirada por " + alunoMaiorNota);
             opcao = JOptionPane.showConfirmDialog(null, "Deseja incluir mais alunos?", "Pergunta", JOptionPane.YES_NO_OPTION);
