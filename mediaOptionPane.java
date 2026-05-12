@@ -23,7 +23,7 @@ public class mediaOptionPane {
             somaMedias += media;
             mediaGeral = somaMedias / qtdAlunos;
 
-            if (media > maiorNota){
+            if (media > maiorMedia){
                 maiorMedia = media;
                 alunoMaiorNota = nome;
             }
